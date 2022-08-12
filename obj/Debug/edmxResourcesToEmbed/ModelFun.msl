@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Empresa_XModelStoreContainer" CdmEntityContainer="Empresa_XEntities">
+    <EntitySetMapping Name="passagem">
+      <EntityTypeMapping TypeName="Empresa_XModel.passagem">
+        <MappingFragment StoreEntitySet="passagem">
+          <ScalarProperty Name="passagemfun" ColumnName="passagemfun" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

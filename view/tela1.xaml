@@ -1,0 +1,110 @@
+﻿<UserControl x:Class="WpfApp3.view.tela1"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp3.view"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="#FF061700">
+    <Grid Grid.Row="1" Background="#FF061700">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="80*"/>
+
+
+
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="103*"/>
+            <RowDefinition Height="56*"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="1" Background="#FF5A5A5A"  >
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="10*"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <TextBox  IsReadOnly="True" FontSize="25  " Text="nome do funcionario"  />
+
+
+            </Grid>
+            <Grid Grid.Row="1">
+                <TextBox x:Name="NomeFun"  FontSize="20  " Foreground="Black" Background="White" materialDesign:HintAssist.Hint="Insira o nome do funcionario " Cursor="Arrow" />
+
+
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <TextBox  IsReadOnly="True" FontSize="25  " Text="valor da passagem"  />
+
+            </Grid>
+
+            <Grid Grid.Row="3">
+                <TextBox x:Name="PassagemFun"  FontSize="20  " Background="White" Foreground="Black"  materialDesign:HintAssist.Hint="Insira o valor da passagem"  />
+
+            </Grid>
+            <Grid Grid.Row="4"  Width="120" Height="30">
+                <Button Background="Black" Content="OK"  Click="NovoFuncionario" Height="32" VerticalAlignment="Top" Cursor="Hand"></Button>
+
+            </Grid>
+
+
+
+
+        </Grid>
+
+
+
+
+
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="30*"/>
+
+
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <StackPanel>
+                <TextBox Background="White" IsReadOnly="True" FontSize="25  " Text="nome do funcionario" />
+                <TextBox HorizontalAlignment="Center" Background="White" FontSize="25 " IsReadOnly="True"  Text="valor da passagem" />
+            </StackPanel>
+
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <TextBox HorizontalAlignment="Center" FontSize="25 "  Margin="0,1,0,43"  SelectionChanged="nome1" >insira</TextBox>
+
+            <TextBox HorizontalAlignment="Center" FontSize="25 "  Margin="0,44,0,0"  SelectionChanged="passagem1" >insira</TextBox>
+
+
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Button Background="DarkGreen" Content="OK"></Button>
+
+        </Grid>-->
+
+    </Grid>
+</UserControl>
